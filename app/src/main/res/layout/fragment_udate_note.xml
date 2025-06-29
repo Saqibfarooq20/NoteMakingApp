@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        tools:context=".UdateNoteFragment">
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardUpdate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+                <EditText
+                    android:id="@+id/title_updateFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="70dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/border"
+                    android:hint="Type your Title"
+                    android:textColorHint="#CCC8C8"
+                    android:textSize="30sp"
+
+                    />
+
+                <EditText
+                    android:id="@+id/body_updateFragment"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/border"
+                    android:gravity="start"
+                    android:hint="Type Somethin"
+                    android:textColorHint="#CCC8C8"
+                    android:textSize="30sp" />
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/floatingUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginEnd="38dp"
+            android:layout_marginBottom="37dp"
+            android:clickable="true"
+            android:src="@drawable/done_24"
+            app:backgroundTint="#FFC107"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:maxImageSize="30dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
